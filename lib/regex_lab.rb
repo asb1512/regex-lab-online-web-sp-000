@@ -1,4 +1,4 @@
-require 'pry'
+ require 'pry'
 
 # Returns true if word starts with a vowel and returns false for words staring with a consonant.
 # –––––––––––––––––––––––––––––
