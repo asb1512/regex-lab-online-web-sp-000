@@ -21,7 +21,7 @@ end
 # Returns true if the first word is capitalized and string ends with punctuation and returns false for all other cases.
 # –––––––––––––––––––––––––––––
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text.match(/\A[A-Z]/) && text.scan(/[.|!|?]\z/) ? true : false
+  text.match(/\A[A-Z]/) && text.scan(/[.|!|?]\z/) ? true : false
 end
 
 # Returns true for a valid phone number, regardless of formatting. Returns false for invalid number, regardless of formatting.
