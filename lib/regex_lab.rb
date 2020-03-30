@@ -22,10 +22,6 @@ end
 # –––––––––––––––––––––––––––––
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.match(/\A[A-Z]/) && text.scan(/[.|!|?]\z/) ? true : false
-    true
-  else
-    false
-  end
 end
 
 # Returns true for a valid phone number, regardless of formatting. Returns false for invalid number, regardless of formatting.
