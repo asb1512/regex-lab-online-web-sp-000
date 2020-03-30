@@ -27,5 +27,5 @@ end
 # Returns true for a valid phone number, regardless of formatting. Returns false for invalid number, regardless of formatting.
 # –––––––––––––––––––––––––––––
 def valid_phone_number?(phone)
-  text.match(/\d{10}/) || text.match(//)
+  text.match(/\d{10}/) || text.scan(/[(](\d{3})[)](\d{3})-(\d{4})/) || text.scan
 end
