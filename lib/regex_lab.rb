@@ -4,9 +4,6 @@ require 'pry'
 # –––––––––––––––––––––––––––––
 def starts_with_a_vowel?(word)
   word.match(/^[aeiouAEIOU]\w+/) ? true : false
-  else
-    false
-  end
 end
 
 # Returns an array of words beginning with 'un-' and ending with '-ing'.
