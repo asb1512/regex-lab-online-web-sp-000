@@ -4,9 +4,9 @@ require 'pry'
 # –––––––––––––––––––––––––––––
 def starts_with_a_vowel?(word)
   binding.pry
-  if word.scan(/\b[aeiou]/)
+  if word.match(/\b[aeiou]/)
     true
-  elsif word.scan(/\b[^aeiou]/)
+  elsif word.match(/\b[^aeiou]/)
     false
   end
 end
