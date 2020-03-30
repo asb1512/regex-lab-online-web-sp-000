@@ -5,7 +5,7 @@ require 'pry'
 def starts_with_a_vowel?(word)
   if /\b[aeiou]/.match?(word)
     true
-  elsif word.scan?(/\b[^aeiou]/)
+  elsif word.scan(/\b[^aeiou]/)
     false
   end
 end
