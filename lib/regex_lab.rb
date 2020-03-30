@@ -9,7 +9,7 @@ end
 # Returns an array of words beginning with 'un-' and ending with '-ing'.
 # –––––––––––––––––––––––––––––
 def words_starting_with_un_and_ending_with_ing(text)
-  text.grep(/un+\w+ing/)
+  text.scan(/un+\w+ing/)
 end
 
 # Returns an array of words that are five letters long.
