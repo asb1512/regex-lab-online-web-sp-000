@@ -15,13 +15,13 @@ end
 # Returns an array of words that are five letters long.
 # –––––––––––––––––––––––––––––
 def words_five_letters_long(text)
-  text.grep(/\b\w{5}\b/)
+  text.match(/\b\w{5}\b/)
 end
 
 # Returns true if the first word is capitalized and string ends with punctuation and returns false for all other cases.
 # –––––––––––––––––––––––––––––
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text.scan(/\A[A-Z]/) && text.scan(/[.|!|?]\z/)
+  if text.match(/\A[A-Z]/) && text.scan(/[.|!|?]\z/)
     true
   else
     false
