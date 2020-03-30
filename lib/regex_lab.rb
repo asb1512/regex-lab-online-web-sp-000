@@ -6,7 +6,7 @@ def starts_with_a_vowel?(word)
   binding.pry
   if word.match(/\b[aeiou]/)
     true
-  elsif word.scan?(/\b[^aeiou]/)
+  elsif word.scan(/\b[^aeiou]/)
     false
   end
 end
