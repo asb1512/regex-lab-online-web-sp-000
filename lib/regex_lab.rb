@@ -3,7 +3,7 @@ require 'pry'
 # Returns true if word starts with a vowel and returns false for words staring with a consonant.
 # –––––––––––––––––––––––––––––
 def starts_with_a_vowel?(word)
-  ?word.match(/^[aeiouAEIOU]\w+/)
+  word.match(/^[aeiouAEIOU]\w+/)
     true
   else
     false
