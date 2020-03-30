@@ -15,7 +15,7 @@ end
 # Returns an array of words that are five letters long.
 # –––––––––––––––––––––––––––––
 def words_five_letters_long(text)
-  text.scan(/\b\w{5}\b/) || text.scan(/[(](\d{3})[)](\d{3})-(\d{4})/)
+  text.scan(/\b\w{5}\b/) || text.scan(/[(](\d{3})[)](\d{3})-(\d{4})/) || text.scan(//)
 end
 
 # Returns true if the first word is capitalized and string ends with punctuation and returns false for all other cases.
