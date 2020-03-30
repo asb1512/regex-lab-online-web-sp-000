@@ -3,7 +3,6 @@ require 'pry'
 # Returns true if word starts with a vowel and returns false for words staring with a consonant.
 # –––––––––––––––––––––––––––––
 def starts_with_a_vowel?(word)
-  binding.pry
   if /\b[aeiou]/.match?(word)
     true
   elsif word.scan?(/\b[^aeiou]/)
